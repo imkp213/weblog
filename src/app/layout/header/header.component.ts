@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { WeblogService } from '../../services/weblog.service';
 import { ToastrService } from 'ngx-toastr';
-import { AuthService } from 'src/app/auth.service';
+import { AuthService } from '../../auth.service';
 
 @Component({
   selector: 'app-header',
@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
   constructor(
     private webBlogApi: WeblogService,
     private toastr: ToastrService,
-    private auth:AuthService
+    public auth:AuthService
     ) { }
 
   ngOnInit() {

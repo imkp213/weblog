@@ -15,7 +15,7 @@ export class BlogComponent implements OnInit {
   likedArr;
   constructor(
     private api:WeblogService,
-    private auth:AuthService,
+    public auth:AuthService,
   ) { }
 
   ngOnInit() {

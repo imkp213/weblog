@@ -6,7 +6,7 @@ import { Observable } from "rxjs";
   providedIn: 'root'
 })
 export class WeblogService {
-  baseUrl = "http://localhost/weblog/api/";
+  baseUrl = "http://v2rsolution.co.in/weblog/api/";
   constructor(private http: HttpClient) { }
 
   fetchUsers(): Observable<Object> {
@@ -34,7 +34,7 @@ export class WeblogService {
   }
 
   userRegister(data):Observable<Object>{
-    return this.http.post("http://localhost/weblog/api/save-user",data);
+    return this.http.post(this.baseUrl+"save-user",data);
   }
 
   userLogin(data):Observable<Object>{

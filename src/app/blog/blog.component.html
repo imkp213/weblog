@@ -1,0 +1,30 @@
+<div class="single-blog-small">
+    <a routerLink="/blogs/{{ blog_detail.get_cat.category_slug }}/{{ blog_detail.post_id }}">
+        <img src="{{ blog_detail.post_image ? baseImageUrl+blog_detail.post_image : 'assets/images/1.jpg' }}" class="card-img-top img-fluid" alt="">
+    </a>
+    <div class="card-body">
+        <ul class="blog-icons my-4">
+            <li>
+                <a>
+                    <i class="fa fa-calendar"></i> 
+                    {{ blog_detail.created_at | date:'longDate' }}
+                </a>
+            </li>
+            <li class="mx-2">
+                <a href="#">
+                    <i class="fa fa-comment"></i> {{ blog_detail.get_cmt_count }}
+                </a>
+            </li>
+            <li>
+                <a href="#" (click)="auth.isUserLoggedIn() && likeBlog($event)" >
+                    <i class="fa fa-thumbs-up" [ngClass]="{'liked':likedOrNot,'fa-refresh fa-spin':loading}" ></i> {{ blog_detail.get_likes_count }}
+                </a>
+            </li>
+        </ul>
+        <h5 class="card-title">
+            <a routerLink="/blogs/{{ blog_detail.get_cat.category_slug }}/{{ blog_detail.post_id }}">{{ blog_detail.post_title }}</a>
+        </h5>
+        <p class="card-text mb-3" [innerHtml]="blog_detail.post_desc.substr(0,130)" ></p>
+        <a routerLink="/blogs/{{ blog_detail.get_cat.category_slug }}/{{ blog_detail.post_id }}" class="btn btn-primary read-m">Read More</a>
+    </div>
+</div>

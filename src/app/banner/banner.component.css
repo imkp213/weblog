@@ -1,0 +1,208 @@
+/*--/banner --*/
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption {
+    bottom: 6em;
+    z-index: 10;
+    text-align: left;
+    margin: 0 auto;
+}
+
+/* Declare heights because of positioning of img element */
+
+.carousel-item {
+	height: 30em;
+	background-color: #777;
+}
+
+.carousel-item>img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	height: 32rem;
+}
+
+/*--/slider--*/
+
+.carousel-item {
+	background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../../assets/images/banner1.jpg) no-repeat;
+	background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../../assets/images/banner1.jpg) no-repeat;
+	background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../../assets/images/banner1.jpg) no-repeat;
+	background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../../assets/images/banner1.jpg) no-repeat;
+	background-size: cover;
+}
+
+.carousel-item.item2 {
+	background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../../assets/images/banner2.jpg) no-repeat;
+	background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../../assets/images/banner2.jpg) no-repeat;
+	background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../../assets/images/banner2.jpg) no-repeat;
+	background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../../assets/images/banner2.jpg) no-repeat;
+	background-size: cover;
+}
+
+.carousel-item.item3 {
+	background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../../assets/images/banner3.jpg) no-repeat;
+	background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../../assets/images/banner3.jpg) no-repeat;
+	background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../../assets/images/banner3.jpg) no-repeat;
+	background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../../assets/images/banner3.jpg) no-repeat;
+	background-size: cover;
+}
+
+.carousel-item.item4 {
+	background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../../assets/images/banner4.jpg) no-repeat;
+	background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../../assets/images/banner4.jpg) no-repeat;
+	background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../../assets/images/banner4.jpg) no-repeat;
+	background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../../assets/images/banner4.jpg) no-repeat;
+	background-size: cover;
+}
+
+.carousel-caption h2,
+.carousel-caption h3 {
+    letter-spacing: 2px;
+    line-height: 1.4em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+    font-size: 3.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.carousel-caption h5 {
+	font-size: 1em;
+	letter-spacing: 1px;
+}
+.carousel-caption span{
+   display:block;
+}
+.carousel-indicators {
+	bottom: 17%;
+	left: 0%;
+	cursor: pointer;
+	display: none;
+}
+
+.bnr-button {
+	margin-top: 2em;
+}
+
+.carousel-control {
+	line-height: 42em;
+}
+
+.carousel-indicators li {
+	display: inline-block;
+	max-width: 20px;
+	height: 19px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	margin: 0 8px;
+}
+
+.carousel-indicators .active {
+	background: #01cd74;
+}
+a.btn.btn-primary.read-m {
+    border-radius: 0;
+    padding: 0.55em 2em;
+    letter-spacing: 1px;
+    background: #01cd74;
+    border: none;
+}
+a.btn.btn-primary.read-m:hover,a.btn.btn-primary.read-m:focus{
+   background:#fff;
+   color:#222;
+   box-shadow:none!important;
+}
+.read {
+    margin-top: 1em;
+}
+/* Show it is fixed to the top */
+
+/*--//banner --*/
+
+/*--/content --*/
+
+h3.tittle {
+    text-align: center;
+    font-size: 2.5em;
+    color: #2c363e;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+    font-weight: 600;
+}
+
+h3.tittle.cen {
+	color: #fff;
+}
+
+.lead {
+	font-size: 1.1em;
+	font-weight: 300;
+}
+
+.featurette-heading {
+	font-size: 46px;
+	line-height: 1.4em;
+}
+
+/*--/banner-bottom --*/
+
+.banner-bottom {
+	padding: 6em 0;
+	position: relative;
+}
+
+.featured-items.banner-bottom {
+	background: #e7e9ea;
+}
+
+.bt-bottom-info h5 {
+	font-size: 2em;
+	line-height: 1.5em;
+	color: #01cd74;
+	margin-bottom: 1em;
+}
+
+.inner-sec {
+	margin-top:3em;
+}
+.modal-body.video iframe {
+	border: none;
+	width: 100%;
+	min-height: 250px;
+}
+
+h5#exampleModalLabel {
+	font-size: 1.2em;
+}
+
+h4.sub-tittle {
+	font-size: 1.4em;
+	color: #131212;
+	letter-spacing: 1px;
+	margin: 1em 0;
+	font-weight: 500;
+}
+
+.bt-grids-main.ab {
+	margin-top: 2em;
+}
+
+/*--//banner-bottom --*/
+.bottom-slider,.main-content-w3layouts-agileits {
+    padding: 5em 0;
+}
+section.bottom-slider {
+ background: #eceff1;
+}
+.left-img img {
+	width: 100%;
+}

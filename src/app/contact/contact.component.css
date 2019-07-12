@@ -1,0 +1,122 @@
+h3.tittle {
+    text-align: center;
+    font-size: 2.5em;
+    color: #2c363e;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+    font-weight: 600;
+}
+
+h3.tittle.cen {
+	color: #fff;
+}
+
+/*--/contact--*/
+.contact_grid_right{
+	padding-top:4em;
+}
+.address-grid i {
+    font-size: 1.7em;
+    color: #01cd74;
+}
+.contact_grid_right {
+    width: 100%;
+}
+p.sub {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.contact_left_grid label {
+    color: #747779;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+}
+.contact_grid_right input[type="text"],
+.contact_grid_right input[type="email"],
+.contact_grid_right textarea {
+    outline: none;
+    padding: 15px 15px;
+    font-size: 14px;
+    color: #777;
+    background: #f7f7f7;
+    width: 100%;
+    letter-spacing: 1px;
+    border: 1px solid #d6d6d6;
+    height: auto;
+}
+.contact_grid_right textarea {
+    min-height: 150px;
+    margin: 1em 0em;
+    resize: none;
+}
+
+.contact_grid_right input[type="submit"] {
+	outline: none;
+    padding: 20px 0;
+    font-size: 14px;
+    color: #fff;
+    background: #0e0f10;
+    border: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+	font-weight:600;
+    cursor: pointer;
+    height: auto;
+}
+
+.contact_grid_right input[type="submit"]:hover {
+    background-color: #01cd74;
+}
+
+.contact-left h4 {
+    color: #444;
+    font-size: 1em;
+    margin-bottom: .5em;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.contact-left p {
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.contact-text a {
+    color: #888;
+}
+
+.contact-text a:hover {
+    color: #fb383b;
+}
+
+.contact_grid_right h6,
+.contact-left h6 {
+    font-size: 1.2em;
+    color: #292b2c;
+    margin-bottom: 1.5em;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.contact-map {
+    width: 100%;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height:350px;
+}
+.ad-inf-sec {
+	padding:4em 0;
+}
+.address-right a {
+    color: #083940;
+}
+.address-right p {
+    color: #2a8490;
+}
+/*-- //contact--*/

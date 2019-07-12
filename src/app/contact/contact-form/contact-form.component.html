@@ -1,0 +1,40 @@
+<div class="contact_grid_right">
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div class="row contact_left_grid">
+          <div class="col-md-6 con-left">
+              <div class="form-group">
+                  <label for="validationCustom01 my-2">Name</label>
+                  <input type="text" formControlName="name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
+                  <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                    <div *ngIf="f.name.errors.required">Please enter name</div>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="exampleFormControlInput1">Email</label>
+                  <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                  <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                    <div *ngIf="f.email.errors.required">Please enter email</div>
+                    <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                </div>
+              </div>
+              <div class="form-group">
+                  <label for="validationCustom03 my-2">Subject</label>
+                  <input type="text" formControlName="subject" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.subject.errors }" />
+                  <div *ngIf="submitted && f.subject.errors" class="invalid-feedback">
+                    <div *ngIf="f.subject.errors.required">Please enter subject</div>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-6 con-right">
+              <div class="form-group">
+                  <label for="textarea">Message</label>
+                  <textarea formControlName="message" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.message.errors }"></textarea>
+                  <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
+                    <div *ngIf="f.message.errors.required">Please enter message</div>
+                </div>
+              </div>
+              <button class="button-contcat">Submit</button>
+          </div>
+      </div>
+  </form>
+</div>

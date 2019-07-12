@@ -1,0 +1,79 @@
+.card {
+    border:none !important;
+}
+.card-img-top {
+    width: 100%;
+	border: none;
+	background: #ebecec;
+    padding: .4em;
+}
+
+.card-body {
+    padding: 12px;
+}
+
+ul.blog-icons li {
+    display: inline-block;
+	margin-right: 20px;
+	list-style:none;
+}
+ul.blog-icons a {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    color: #999;
+}
+ul.blog-icons i {
+    color: #01cd74;
+}
+ul.blog-icons .fa-thumbs-up {
+    color:#adb2ba;
+}
+.fa-thumbs-up.liked{
+    color: #01cd74 !important; 
+}
+.blog-icons.my-4{
+    padding: 0px;
+}
+
+.blog-grid-top h3,.two-blog2 h3,h5.card-title {
+    font-size: 1.2em;
+	margin: 1.2em 0 1em 0;
+	font-weight: 700;
+}
+.blog-grid-top h3 a,.two-blog2 h3 a,h5.card-title a {
+	color: #333333;
+}
+.blog-grid-top p,.two-blog2 p{
+    margin-bottom: 2em;
+}
+.blog-grid-top {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 3em;
+}
+.blog-mid-sec {
+    background: #eceff1;
+    padding: .5em;
+    margin: 1em 0;
+}
+button.btn.btn-primary.play.sec{
+	width:40px;
+	height:40px;
+}
+
+a.btn.btn-primary.read-m {
+    border-radius: 0;
+    padding: 0.55em 2em;
+    letter-spacing: 1px;
+    background: #01cd74;
+    border: none;
+}
+
+a.btn.btn-primary.read-m:hover,a.btn.btn-primary.read-m:focus{
+    background:#fff;
+    color:#222;
+    box-shadow:none!important;
+}
+
+.single-blog-small a{
+    text-decoration: none;
+}

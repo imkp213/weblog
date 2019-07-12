@@ -1,1 +1,166 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~ngx-toastr/toastr.css';  
+
+@media(max-width:1440px) {
+	.bottom-slider, .main-content-w3layouts-agileits, footer,.banner-bottom {
+		padding: 4em 0;
+    }
+    footer{
+        padding: 1em 0;
+    }
+	section.middle-sec-agileinfo-w3ls {
+		min-height: 665px;
+		padding: 3em 0;
+	}
+
+}
+
+p{
+	margin: 0;
+    font-size: 0.9em;
+    color: #777777;
+    line-height: 2em;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.fa{
+    font-weight: bold;
+}
+
+.nav-item a{
+    cursor: pointer;
+}
+
+h3.tittle {
+    text-align: center;
+    font-size: 2.5em;
+    color: #2c363e;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+    font-weight: 600;
+}
+
+h3.tittle.cen {
+	color: #fff;
+}
+
+/*--flexisel--*/
+.flex-slider{	
+    background:#222227;
+    padding: 70px 0 165px 0;
+}
+.opportunity{
+    background:#28282e;
+    margin:0px 20px;
+    padding:80px 0;
+    position:relative;
+}
+#flexiselDemo1 {
+    display: none;
+}
+.nbs-flexisel-container {
+    position: relative;
+    max-width: 100%;
+}
+.nbs-flexisel-ul {
+    position: relative;
+    width: 9999px;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+.nbs-flexisel-inner {
+    overflow: hidden;
+    margin: 0px auto;
+    background: #f8f8f8;
+    border: none;
+    border-right:none;
+}
+.nbs-flexisel-item {
+    float: left;
+    margin:0 2px;
+    padding: 0em;
+    position: relative;
+    line-height: 0px;
+}
+.nbs-flexisel-item > img {
+    cursor: pointer;
+    position: relative;
+}
+/*---- Nav ---*/
+.nbs-flexisel-nav-left, .nbs-flexisel-nav-right {
+    width:25px;
+    height: 69px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+}
+.nbs-flexisel-nav-left {
+    left: 0%;
+    top: 33% !important;
+    background:#111 url(assets/images/left.png) no-repeat -6px 16px;
+}
+.nbs-flexisel-nav-right {
+  right: 0%;
+  top: 33% !important;
+  background:#111 url(assets/images/right.png) no-repeat -3px 16px;
+}
+/*--//flexisel--*/
+.blog-item{
+    position:relative;
+}
+.floods-text {
+    position: absolute;
+    bottom:0%;
+    left:0%;
+    padding: 1em;
+    background: rgba(14, 15, 16, 0.67);
+    width:100%;
+}
+.floods-text h3{
+    font-size:.9em;
+    color:#fff;
+    margin:0;
+    font-weight:400;
+}
+.floods-text h3 span{
+    display: block;
+    color: #01cd74;
+    margin: .5em 0 1em;
+    font-size: .8em;
+}
+.floods-text h3 label{
+    color: #B2B2B2;
+    padding: 0 1em;
+}
+.floods-text h3 i{
+    font-style:normal;
+    color:#01cd74;
+}
+
+button.btn.btn-primary.play{
+width:50px;
+height:50px;
+border-radius: 50%;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+-o-border-radius: 50%;
+-ms-border-radius: 50%;
+outline: none;
+cursor: pointer;
+border:2px solid #fff;
+background-color:rgba(0, 0, 0, 0.37);
+position:absolute;
+left:46%;
+bottom:50%;
+}
+.course_demo1 {
+margin: 0 auto;
+width: 90%;
+background: #fdfdfd;
+padding: 1em;
+}
+/*--//content --*/

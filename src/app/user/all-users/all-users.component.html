@@ -1,0 +1,39 @@
+<app-header></app-header>
+<app-banner-inner [breadTitle]="'All Dummy Posts'"></app-banner-inner>
+
+<section class="main-content-w3layouts-agileits">
+  <div class="container">
+      <h3 class="tittle">All Dummy Posts</h3>
+  </div>
+  <div class="container">
+    <input class="form-control col-md-4" (keyup)="search($event)" type="text" placeholder="start enter title">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">ID</th>
+          <th scope="col">Title</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngIf="users.length > 0; then tablePost else noTablePost"></ng-container>
+        <ng-template #tablePost>
+            <tr *ngFor="let user of users | paginate: config ; index as i">
+                <th scope="row">{{i+1}}</th>
+                <td>{{user.id}}</td>
+                <td>{{ user.title }}</td>
+                <td>{{ user.body | slice:0:150 }}...</td>
+              </tr>
+        </ng-template>
+        <ng-template  #noTablePost>
+          <tr>
+            <td colspan="4" class="text-center">No Record Found</td>
+          </tr>
+        </ng-template>
+      </tbody>
+    </table>
+    <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+  </div>
+</section>
+<app-footer></app-footer>
